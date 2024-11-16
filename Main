@@ -1,0 +1,120 @@
+import time
+# Importing the module "Functions".
+from functions import add_book, borrow_book, return_book, search_book, display_collection
+
+def main():
+  """
+  Description: Main function to run the library management system.
+  
+  Argument: N/A
+  
+  Returns: Provides a menu-driven interface for the user to add, borrow, return, search for, and display books in the library. Continues to prompt the user for input until the user exits. 
+  """
+  print("Welcome to the lost Library of Baghdad.")
+  while True:
+    books = []
+    time.sleep(1)
+    print("\n1. Add a book")
+    print("2. Borrow a book")
+    print("3. Return a book")
+    print("4. Search for a book")
+    print("5. Display all the books")
+    print("6. Exit\n")
+    time.sleep(1)
+
+    choice = input("What would you like to do? (Input choice #): ")
+    # When the user selects one of the six options, the corresponding function is called.
+    if choice == "1":
+      #runs the book addition function.
+      time.sleep(1)
+      add_book()
+      
+    elif choice == "2":
+      # asks the user for the book title and genre, then
+      # begins the proceedure of borrowing the book.
+      time.sleep(1)
+      genre_selected = False
+      while genre_selected == False:
+        try:
+            genre = input("Please enter the genre of the book you'd like to borrow: ").strip()
+            if genre == "exit":
+                print("Ending book borrowing process...")
+                time.sleep(1)
+                break
+            elif genre != "history" and genre != "romance" and genre != "fantasy" and "hadiths" and genre != "stories_of_the_quran" and "general science" and genre != "math" and genre != "astronomy":
+                raise Exception
+            else:
+                genre_selected = True
+                break
+        except:
+            print("Error, we do not have this genre in our library. Please try again.")
+      if genre != "exit":
+        book_title = input("Please enter the title of the book you'd like to borrow: ").strip()
+        borrow_book(book_title, genre)
+      else:
+        pass
+      
+    elif choice == "3":
+      # asks the user for the book title and genre, then
+      # begins the proceedure of returning the book.
+      time.sleep(1)
+      book_title = input("Please enter the title of the book you'd like to return: ").strip()
+      genre_selected = False
+      while genre_selected == False:
+        try:
+            genre = input("Please enter the genre of the book you'd like to return: ").strip().lower()
+            if genre == "exit":
+                print("Ending book return process...")
+                time.sleep(1)
+                break
+            elif genre != "history" and genre != "romance" and genre != "fantasy" and "hadiths" and genre != "stories_of_the_quran" and "general science" and genre != "math" and genre != "astronomy":
+                raise Exception
+            else:
+                genre_selected = True
+                break
+        except:
+            print("Error, we do not have this genre in our library. Please try again.")
+      if genre != "exit":
+        return_book(book_title, genre)
+      else:
+        pass
+      
+    elif choice == "4":
+      # asks the user for a book title then begins the search process.
+      time.sleep(1)
+      title = input("Please enter the title of the book you'd like to search for: ").strip()
+      search_book(title)
+      
+    elif choice == "5":
+      # asks the user for a genre then displays all the books in that genre.
+      time.sleep(1)
+      genre_selected = False
+      while genre_selected == False:
+        try:
+            genre = input("Please enter the genre you want to display: ").strip().lower()
+            if genre == "exit":
+                print("Ending book searching process...")
+                time.sleep(1)
+                break
+            elif genre != "history" and genre != "romance" and genre != "fantasy" and "hadiths" and genre != "stories_of_the_quran" and "general science" and genre != "math" and genre != "astronomy":
+                raise Exception
+            else:
+                genre_selected = True
+                break
+        except:
+            print("Error, we do not have this genre in our library. Please try again.")
+      if genre != "exit":
+        display_collection(genre)
+      else:
+        pass
+      
+    elif choice == "6":
+      # ends the code.
+      time.sleep(1)
+      print("Thank you for visiting the Library of Baghdad.")
+      break
+    else:
+      print("Invalid choice. Please try again.")
+
+if __name__ == "__main__":
+    main()
