@@ -1,0 +1,231 @@
+# A list of books for the History genre.
+history_books = [
+  {"title": "A People's History of the United States", "author": "Howard Zinn", "published_date": "1980"},
+  {"title": "The Guns of August", "author": "Barbara W. Tuchman", "published_date": "1962"},
+  {"title": "The Rise and Fall of the Third Reich", "author": "William L. Shirer", "published_date": "1960"},
+  {"title": "Genghis Khan and the Making of the Modern World", "author": "Jack Weatherford", "published_date": "2004"},
+  {"title": "SPQR: A History of Ancient Rome", "author": "Mary Beard", "published_date": "2015"},
+  {"title": "The Histories", "author": "Herodotus", "published_date": "5th century BC"},
+  {"title": "The Devil in the White City", "author": "Erik Larson", "published_date": "2003"},
+  {"title": "1491: New Revelations of the Americas Before Columbus", "author": "Charles C. Mann", "published_date": "2005"},
+  {"title": "The Silk Roads: A New History of the World", "author": "Peter Frankopan", "published_date": "2015"},
+  {"title": "Sapiens: A Brief History of Humankind", "author": "Yuval Noah Harari", "published_date": "2011"},
+  {"title": "The Wright Brothers", "author": "David McCullough", "published_date": "2015"},
+  {"title": "The Crusades: The Authoritative History of the War for the Holy Land", "author": "Thomas Asbridge", "published_date": "2010"},
+  {"title": "The Plantagenets: The Warrior Kings and Queens Who Made England", "author": "Dan Jones", "published_date": "2012"},
+  {"title": "The Reformation: A History", "author": "Diarmaid MacCulloch", "published_date": "2003"},
+  {"title": "The Swerve: How the World Became Modern", "author": "Stephen Greenblatt", "published_date": "2011"},
+  {"title": "The Story of Civilization", "author": "Will Durant", "published_date": "1935"},
+  {"title": "Empire of the Summer Moon: Quanah Parker and the Rise and Fall of the Comanches", "author": "S.C. Gwynne", "published_date": "2010"},
+  {"title": "The Prize: The Epic Quest for Oil, Money, and Power", "author": "Daniel Yergin", "published_date": "1990"},
+  {"title": "The Warmth of Other Suns: The Epic Story of America's Great Migration", "author": "Isabel Wilkerson", "published_date": "2010"},
+  {"title": "Battle Cry of Freedom: The Civil War Era", "author": "James M. McPherson", "published_date": "1988"}
+]
+
+# A list of books for the Romance genre.
+romance_books = [
+  {"title": "Pride and Prejudice", "author": "Jane Austen", "published_date": "1813"},
+  {"title": "Jane Eyre", "author": "Charlotte Brontë", "published_date": "1847"},
+  {"title": "Outlander", "author": "Diana Gabaldon", "published_date": "1991"},
+  {"title": "The Notebook", "author": "Nicholas Sparks", "published_date": "1996"},
+  {"title": "Me Before You", "author": "Jojo Moyes", "published_date": "2012"},
+  {"title": "The Time Traveler's Wife", "author": "Audrey Niffenegger", "published_date": "2003"},
+  {"title": "The Fault in Our Stars", "author": "John Green", "published_date": "2012"},
+  {"title": "Gone with the Wind", "author": "Margaret Mitchell", "published_date": "1936"},
+  {"title": "A Walk to Remember", "author": "Nicholas Sparks", "published_date": "1999"},
+  {"title": "Red, White & Royal Blue", "author": "Casey McQuiston", "published_date": "2019"},
+  {"title": "The Rosie Project", "author": "Graeme Simsion", "published_date": "2013"},
+  {"title": "Eleanor & Park", "author": "Rainbow Rowell", "published_date": "2012"},
+  {"title": "The Princess Bride", "author": "William Goldman", "published_date": "1973"},
+  {"title": "The Hating Game", "author": "Sally Thorne", "published_date": "2016"},
+  {"title": "To All the Boys I've Loved Before", "author": "Jenny Han", "published_date": "2014"},
+  {"title": "One Day", "author": "David Nicholls", "published_date": "2009"},
+  {"title": "The Wedding Date", "author": "Jasmine Guillory", "published_date": "2018"},
+  {"title": "Attachments", "author": "Rainbow Rowell", "published_date": "2011"},
+  {"title": "The Seven Husbands of Evelyn Hugo", "author": "Taylor Jenkins Reid", "published_date": "2017"},
+  {"title": "The Kiss Quotient", "author": "Helen Hoang", "published_date": "2018"}
+]
+
+# A list of books for the Fantasy genre.
+fantasy_books = [
+  {"title": "The Lord of the Rings", "author": "J.R.R. Tolkien", "published_date": "1954"},
+  {"title": "A Song of Ice and Fire series", "author": "George R.R. Martin", "published_date": "1996-2011"},
+  {"title": "Harry Potter series", "author": "J.K. Rowling", "published_date": "1997-2007"},
+  {"title": "The Hobbit", "author": "J.R.R. Tolkien", "published_date": "1937"},
+  {"title": "Mistborn series", "author": "Brandon Sanderson", "published_date": "2006-2018"},
+  {"title": "Wheel of Time series", "author": "Robert Jordan", "published_date": "1990-2013"},
+  {"title": "The Name of the Wind", "author": "Patrick Rothfuss", "published_date": "2007"},
+  {"title": "The Chronicles of Narnia", "author": "C.S. Lewis", "published_date": "1950-1956"},
+  {"title": "His Dark Materials series", "author": "Philip Pullman", "published_date": "1995-2000"},
+  {"title": "The Witcher series", "author": "Andrzej Sapkowski", "published_date": "1994-2013"},
+  {"title": "The Stormlight Archive series", "author": "Brandon Sanderson", "published_date": "2010-"},
+  {"title": "The Kingkiller Chronicle series", "author": "Patrick Rothfuss", "published_date": "2007-"},
+  {"title": "The Dresden Files series", "author": "Jim Butcher", "published_date": "2000-"},
+  {"title": "The Lies of Locke Lamora", "author": "Scott Lynch", "published_date": "2006"},
+  {"title": "The Poppy War", "author": "R.F. Kuang", "published_date": "2018"},
+  {"title": "The Black Prism", "author": "Brent Weeks", "published_date": "2010"},
+  {"title": "The Way of Kings", "author": "Brandon Sanderson", "published_date": "2010"},
+  {"title": "American Gods", "author": "Neil Gaiman", "published_date": "2001"},
+  {"title": "The Final Empire", "author": "Brandon Sanderson", "published_date": "2006"},
+  {"title": "Good Omens", "author": "Neil Gaiman", "published_date": "1990"}
+]
+
+# A list of books for the Hadiths section of the library.
+hadiths_books = [
+  {"title": "Sahih al-Bukhari", "author": "Muhammad al-Bukhari", "published_date": "9th century"},
+  {"title": "Sahih Muslim", "author": "Muslim ibn al-Hajjaj", "published_date": "9th century"},
+  {"title": "Sunan Abu Dawood", "author": "Abu Dawood", "published_date": "9th century"},
+  {"title": "Sunan al-Tirmidhi", "author": "Al-Tirmidhi", "published_date": "9th century"},
+  {"title": "Sunan ibn Majah", "author": "Ibn Majah", "published_date": "9th century"},
+  {"title": "Muwatta Imam Malik", "author": "Imam Malik", "published_date": "8th century"},
+  {"title": "Musnad Ahmad ibn Hanbal", "author": "Ahmad ibn Hanbal", "published_date": "9th century"},
+  {"title": "Al-Adab al-Mufrad", "author": "Imam al-Bukhari", "published_date": "9th century"},
+  {"title": "Riyadh as-Salihin", "author": "Imam an-Nawawi", "published_date": "13th century"},
+  {"title": "Bulugh al-Maram", "author": "Ibn Hajar al-Asqalani", "published_date": "15th century"},
+  {"title": "Al-Kafi", "author": "Shaykh Abu Ja'far Muhammad ibn Ya'qub al-Kulayni", "published_date": "10th century"},
+  {"title": "Al-Tahdhib", "author": "Shaykh Abu Ja'far Muhammad ibn Hasan al-Tusi", "published_date": "10th century"},
+  {"title": "Al-Istibsar", "author": "Shaykh Abu Ja'far Muhammad ibn Hasan al-Tusi", "published_date": "10th century"},
+  {"title": "Wasā'il al-Shīʿa", "author": "Al-Shaykh al-Hur al-Aamili", "published_date": "17th century"},
+  {"title": "Al-Amali", "author": "Shaykh Saduq", "published_date": "10th century"},
+  {"title": "Mishkat al-Masabih", "author": "Al-Baghawi", "published_date": "13th century"},
+  {"title": "Al-Mustadrak alaa al-Sahihain", "author": "Al-Hakim al-Nishapuri", "published_date": "10th century"},
+  {"title": "Al-Mu'jam al-Kabir", "author": "Al-Tabarani", "published_date": "9th century"},
+  {"title": "Jami` at-Tirmidhi", "author": "Al-Tirmidhi", "published_date": "9th century"},
+  {"title": "Muntakhab Ahadith", "author": "Various", "published_date": "Various"}
+]
+
+# A list of books for the Stories of the Quran section of the library.
+stories_of_the_quran_books = [
+  {"title": "The Quran", "author": "Various", "published_date": "7th century"},
+  {"title": "Stories of the Prophets", "author": "Ibn Kathir", "published_date": "14th century"},
+  {"title": "The Prophets in Barzakh and Hadith al-Nuzul", "author": "Al-Dhahabi", "published_date": "14th century"},
+  {"title": "When the Moon Split", "author": "Safiur Rahman Mubarakpuri", "published_date": "20th century"},
+  {"title": "Qasas al-Nabiyyin", "author": "Abul Hasan Ali Nadwi", "published_date": "20th century"},
+  {"title": "Companions of the Prophet", "author": "Abdul Wahid Hamid", "published_date": "20th century"},
+  {"title": "Muhammad: His Life Based on the Earliest Sources", "author": "Martin Lings", "published_date": "1983"},
+  {"title": "In the Footsteps of the Prophet", "author": "Tariq Ramadan", "published_date": "2007"},
+  {"title": "The Life of the Prophet Muhammad: Al-Sira al-Nabawiyya", "author": "Ibn Kathir", "published_date": "14th century"},
+  {"title": "The Sealed Nectar", "author": "Saifur Rahman al-Mubarakpuri", "published_date": "20th century"},
+  {"title": "The Prophet Muhammad: A Biography", "author": "Barnaby Rogerson", "published_date": "2003"},
+  {"title": "The Life of Muhammad", "author": "Muhammad Husayn Haykal", "published_date": "1935"},
+  {"title": "The Life of the Last Prophet", "author": "Yusuf Islam", "published_date": "1995"},
+  {"title": "Muhammad: Man and Prophet", "author": "Adil Salahi", "published_date": "2002"},
+  {"title": "The Life of Muhammad", "author": "Ibn Ishaq", "published_date": "8th century"},
+  {"title": "The Life of Muhammad", "author": "Ibn Kathir", "published_date": "14th century"},
+  {"title": "The Life of Muhammad", "author": "Muhammad Husayn Haykal", "published_date": "20th century"},
+  {"title": "The Life of Muhammad", "author": "Martin Lings", "published_date": "1983"},
+  {"title": "The Life of Muhammad", "author": "Tariq Ramadan", "published_date": "2007"},
+  {"title": "The Life of Muhammad", "author": "Washington Irving", "published_date": "1869"}
+]
+
+# A list of books for the Bilogy genre of the library.
+biology_books = [
+  {"title": "The Selfish Gene", "author": "Richard Dawkins", "published_date": "1976"},
+  {"title": "The Origin of Species", "author": "Charles Darwin", "published_date": "1859"},
+  {"title": "The Greatest Show on Earth", "author": "Richard Dawkins", "published_date": "2009"},
+  {"title": "Why Evolution Is True", "author": "Jerry A. Coyne", "published_date": "2009"},
+  {"title": "The Immortal Life of Henrietta Lacks", "author": "Rebecca Skloot", "published_date": "2010"},
+  {"title": "The Sixth Extinction: An Unnatural History", "author": "Elizabeth Kolbert", "published_date": "2014"},
+  {"title": "The Gene: An Intimate History", "author": "Siddhartha Mukherjee", "published_date": "2016"},
+  {"title": "The Hot Zone", "author": "Richard Preston", "published_date": "1994"},
+  {"title": "The Botany of Desire", "author": "Michael Pollan", "published_date": "2001"},
+  {"title": "Lab Girl", "author": "Hope Jahren", "published_date": "2016"},
+  {"title": "The Beak of the Finch: A Story of Evolution in Our Time", "author": "Jonathan Weiner", "published_date": "1994"},
+  {"title": "Guns, Germs, and Steel: The Fates of Human Societies", "author": "Jared Diamond", "published_date": "1997"},
+  {"title": "The Tangled Tree: A Radical New History of Life", "author": "David Quammen", "published_date": "2018"},
+  {"title": "The Descent of Man", "author": "Charles Darwin", "published_date": "1871"},
+  {"title": "The Diversity of Life", "author": "Edward O. Wilson", "published_date": "1992"},
+  {"title": "Sapiens: A Brief History of Humankind", "author": "Yuval Noah Harari", "published_date": "2011"},
+  {"title": "The Hidden Life of Trees", "author": "Peter Wohlleben", "published_date": "2015"},
+  {"title": "The Language of Flowers", "author": "Vanessa Diffenbaugh", "published_date": "2011"},
+  {"title": "Darwin's Ghosts: The Secret History of Evolution", "author": "Rebecca Stott", "published_date": "2012"},
+  {"title": "The Wisdom of Bees", "author": "Michael O'Malley", "published_date": "2010"}
+]
+
+# A list of books for the Astronoy section of the library.
+astronomy_books = [
+  {"title": "Cosmos", "author": "Carl Sagan", "published_date": "1980"},
+  {"title": "A Brief History of Time", "author": "Stephen Hawking", "published_date": "1988"},
+  {"title": "The Elegant Universe", "author": "Brian Greene", "published_date": "1999"},
+  {"title": "Astrophysics for People in a Hurry", "author": "Neil deGrasse Tyson", "published_date": "2017"},
+  {"title": "The Fabric of the Cosmos", "author": "Brian Greene", "published_date": "2004"},
+  {"title": "Pale Blue Dot", "author": "Carl Sagan", "published_date": "1994"},
+  {"title": "Black Holes and Time Warps: Einstein's Outrageous Legacy", "author": "Kip S. Thorne", "published_date": "1994"},
+  {"title": "Death by Black Hole: And Other Cosmic Quandaries", "author": "Neil deGrasse Tyson", "published_date": "2007"},
+  {"title": "The Grand Design", "author": "Stephen Hawking and Leonard Mlodinow", "published_date": "2010"},
+  {"title": "The Hidden Reality", "author": "Brian Greene", "published_date": "2011"},
+  {"title": "The Cosmic Landscape", "author": "Leonard Susskind", "published_date": "2006"},
+  {"title": "A Universe from Nothing", "author": "Lawrence M. Krauss", "published_date": "2012"},
+  {"title": "The Illustrated Brief History of Time", "author": "Stephen Hawking", "published_date": "1996"},
+  {"title": "The Science of Interstellar", "author": "Kip S. Thorne", "published_date": "2014"},
+  {"title": "Cosmos", "author": "Carl Sagan", "published_date": "1980"},
+  {"title": "Origins: Fourteen Billion Years of Cosmic Evolution", "author": "Neil deGrasse Tyson and Donald Goldsmith", "published_date": "2004"},
+  {"title": "Astrophysics: A Very Short Introduction", "author": "James Binney", "published_date": "2016"},
+  {"title": "The First Three Minutes: A Modern View of the Origin of the Universe", "author": "Steven Weinberg", "published_date": "1977"},
+  {"title": "The Fabric of the Cosmos", "author": "Brian Greene", "published_date": "2004"},
+  {"title": "Astronomy: A Beginner's Guide to the Universe", "author": "Eric Chaisson and Steve McMillan", "published_date": "2013"}
+]
+
+# A list of books for the Math genre of the library.
+math_books = [
+  {"title": "Principia Mathematica", "author": "Isaac Newton", "published_date": "1687"},
+  {"title": "The Elements", "author": "Euclid", "published_date": "circa 300 BC"},
+  {"title": "The Man Who Knew Infinity: A Life of the Genius Ramanujan", "author": "Robert Kanigel", "published_date": "1991"},
+  {"title": "Fermat's Enigma: The Epic Quest to Solve the World's Greatest Mathematical Problem", "author": "Simon Singh", "published_date": "1997"},
+  {"title": "Gödel, Escher, Bach: An Eternal Golden Braid", "author": "Douglas Hofstadter", "published_date": "1979"},
+  {"title": "The Joy of x: A Guided Tour of Math, from One to Infinity", "author": "Steven Strogatz", "published_date": "2012"},
+  {"title": "The Princeton Companion to Mathematics", "author": "Timothy Gowers", "published_date": "2008"},
+  {"title": "Flatland: A Romance of Many Dimensions", "author": "Edwin Abbott Abbott", "published_date": "1884"},
+  {"title": "Mathematics: Its Content, Methods and Meaning", "author": "A.N. Kolmogorov, A.M. Yaglom", "published_date": "1956"},
+  {"title": "An Introduction to the Theory of Numbers", "author": "G.H. Hardy", "published_date": "1938"},
+  {"title": "The Art of Problem Solving", "author": "Richard Rusczyk", "published_date": "1993"},
+  {"title": "In Pursuit of the Unknown: 17 Equations That Changed the World", "author": "Ian Stewart", "published_date": "2012"},
+  {"title": "How Not to Be Wrong: The Power of Mathematical Thinking", "author": "Jordan Ellenberg", "published_date": "2014"},
+  {"title": "The Music of the Primes: Searching to Solve the Greatest Mystery in Mathematics", "author": "Marcus du Sautoy", "published_date": "2003"},
+  {"title": "Journey Through Genius: The Great Theorems of Mathematics", "author": "William Dunham", "published_date": "1990"},
+  {"title": "Zero: The Biography of a Dangerous Idea", "author": "Charles Seife", "published_date": "2000"},
+  {"title": "The Man Who Counted: A Collection of Mathematical Adventures", "author": "Malba Tahan", "published_date": "1938"},
+  {"title": "The Golden Ratio: The Story of Phi, the World's Most Astonishing Number", "author": "Mario Livio", "published_date": "2002"},
+  {"title": "A Mathematician's Apology", "author": "G.H. Hardy", "published_date": "1940"},
+  {"title": "Prime Obsession: Bernhard Riemann and the Greatest Unsolved Problem in Mathematics", "author": "John Derbyshire", "published_date": "2003"}
+]
+
+# A list of books for the General Science genre of the library.
+general_science_books = [
+  {"title": "A Short History of Nearly Everything", "author": "Bill Bryson", "published_date": "2003"},
+  {"title": "The Demon-Haunted World: Science as a Candle in the Dark", "author": "Carl Sagan", "published_date": "1995"},
+  {"title": "The Selfish Gene", "author": "Richard Dawkins", "published_date": "1976"},
+  {"title": "The Elegant Universe", "author": "Brian Greene", "published_date": "1999"},
+  {"title": "The Greatest Show on Earth", "author": "Richard Dawkins", "published_date": "2009"},
+  {"title": "The Immortal Life of Henrietta Lacks", "author": "Rebecca Skloot", "published_date": "2010"},
+  {"title": "Cosmos", "author": "Carl Sagan", "published_date": "1980"},
+  {"title": "A Brief History of Time", "author": "Stephen Hawking", "published_date": "1988"},
+  {"title": "The Man Who Mistook His Wife for a Hat", "author": "Oliver Sacks", "published_date": "1985"},
+  {"title": "Surely You're Joking, Mr. Feynman!", "author": "Richard Feynman", "published_date": "1985"},
+  {"title": "The Diversity of Life", "author": "Edward O. Wilson", "published_date": "1992"},
+  {"title": "The Gene: An Intimate History", "author": "Siddhartha Mukherjee", "published_date": "2016"},
+  {"title": "The Structure of Scientific Revolutions", "author": "Thomas S. Kuhn", "published_date": "1962"},
+  {"title": "Guns, Germs, and Steel: The Fates of Human Societies", "author": "Jared Diamond", "published_date": "1997"},
+  {"title": "The Beak of the Finch: A Story of Evolution in Our Time", "author": "Jonathan Weiner", "published_date": "1994"},
+  {"title": "The Hot Zone", "author": "Richard Preston", "published_date": "1994"},
+  {"title": "The Sixth Extinction: An Unnatural History", "author": "Elizabeth Kolbert", "published_date": "2014"},
+  {"title": "The Fabric of the Cosmos", "author": "Brian Greene", "published_date": "2004"},
+  {"title": "Sapiens: A Brief History of Humankind", "author": "Yuval Noah Harari", "published_date": "2011"},
+  {"title": "The Language of Flowers", "author": "Vanessa Diffenbaugh", "published_date": "2011"}
+]
+
+# All the genres in the library of Baghdad.
+global books
+books = {
+  "history": history_books,
+  "romance": romance_books,
+  "fantasy": fantasy_books,
+  "hadiths": hadiths_books,
+  "stories_of_the_quran": stories_of_the_quran_books,
+  "biology": biology_books,
+  "astronomy": astronomy_books,
+  "general_science": general_science_books,
+  "math": math_books
+}
+
+in_library = books
