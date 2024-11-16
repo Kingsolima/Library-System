@@ -1,0 +1,141 @@
+from genres import books
+import time
+
+borrowed_books = {genre: [] for genre in books}
+
+def add_book():
+    """
+    Description: Asks the user for the genre, title, author, and published   date of the book to be donated. Adds the book to the appropriate genre in the `books` dictionary.
+    
+    Argument: N/A
+    
+    Returns: N/A
+    """
+    print("To donate a book to this esteemed library, you must provide the title, author, and published date of the book you'd like to donate.")
+    genre_selected = False
+    while genre_selected == False:
+        try:  
+            genre = input("Input the genre of the book you are donating: ").strip().lower()
+            if genre == "exit":
+                print("Ending book addition process...")
+                time.sleep(1)
+                return
+            elif genre != "history" and genre != "romance" and genre != "fantasy" and "hadiths" and genre != "stories_of_the_quran" and "general science" and genre != "math" and genre != "astronomy":
+                raise Exception
+            else:
+                genre_selected = True
+                break
+        except:
+            print("Error, we do not have this genre in our library. Please try again.")
+    title = input("Input the title of the book you are donating: ").strip()
+    if title == "exit":
+        print("Ending book addition process...")
+        time.sleep(1)
+        return
+    else:
+        pass
+    author = input("Input the author of the book you are donating: ").strip()
+    if author == "exit":
+        print("Ending book addition process...")
+        time.sleep(1)
+        return
+    else:
+        pass
+    date = input("Input the published date of the book you are donating (yyyy): ").strip()
+    if date == "exit":
+        print("Ending book addition process...")
+        time.sleep(1)
+        return
+    else:
+        pass
+    new_book = {
+        "title" : title,
+        "author" : author,
+        "published_date" : date
+        }
+    if genre in books:
+        books[genre].append(new_book)
+        print(f"The book '{title}' by {author} in {genre} has been added to the collection.")
+    else:
+        print(f"Genre '{genre}' does not exist in the library.")
+
+def return_book(book_title, genre):
+    """
+    Description: Asks the user for the genre and title of the book being returned and checks if the user has borrowed the book. If the book is borrowed, it is removed from the borrowed_book dictionary and added to the appropriate genre in the books dictionary.
+    
+    Argument: book_title (str): The title of the book to be returned.
+              genre (str): The genre of the book to be returned.
+    
+    Returns: N/A
+    """
+    genre = genre.strip().lower()
+    if genre in borrowed_books:
+        for book in borrowed_books[genre]:
+            if book["title"].lower() == book_title.lower():
+                borrowed_books[genre].remove(book)
+                print(f"The book '{book_title}' has been returned to the library.")
+                return
+        print("Sorry, this book does not belong to this library. Please try again.")
+    else:
+        print("Sorry, this genre does not exist in this library. Please try again.")
+
+def borrow_book(book_title, genre):
+  """
+  Description: Checks if the book exists in the specified genre and is not already borrowed. If the book is available, it is added to the borrowed books list.
+
+  Argument: book_title (str): The title of the book to be returned.
+            genre (str): The genre of the book to be returned.
+
+  Returns: N/A
+  """
+  genre = genre.strip().lower()
+  if genre in books:
+      for book in books[genre]:
+          if book["title"].lower() == book_title.lower() and book not in borrowed_books[genre]:
+              borrowed_books[genre].append(book)
+              print(f"The book '{book_title}' has been borrowed from the library.")
+              return book
+      print("Sorry, this book does not exist in this library. Please try again.")
+  else:
+      print("Sorry, this genre does not exist in this library. Please try again.")
+  return None
+
+def search_book(title):
+  """
+  Description: Searches for a book in the library collection. Checks if the book exists in any genre and prints its location if found.
+
+  Argument: title (str): The title of the book to be returned.
+
+  Returns: N/A
+  """
+  title = title.strip().lower()
+  for genre, genre_books in books.items():
+      for book in genre_books:
+          if book["title"].lower() == title:
+              print(f"\nThe book '{title}' is in our collection.")
+              print(f"It is in the {genre.capitalize()} section.")
+              return
+  print("Sorry, this book does not exist in this library. Please try again.")
+  
+def display_collection(genre):
+  """
+  Description: Prints the list of books in the specified genre if the genre exists in the library.
+
+  Argument: genre (str): The genre of the book to be returned.
+
+  Returns: N/A
+  """
+  genre = genre.strip().lower()
+  if genre in books:
+      for book in books[genre]:
+          print(book)
+  else:
+    print(f"Sorry, the genre '{genre}' does not exist in this library.")
+
+if __name__ == "__main__":
+    add_book() # function will run through since it requires user 
+               # inputs. 
+    borrow_book("the guns of august", "history") # function will borrow the book properly with no user input required.
+    return_book("the guns of august", "history") # function will return the book properly with no user input required.
+    search_book("the guns of august") # function will search for the book properly with no user input required.
+    display_collection("history") # function will display all history books in the selection properly with no user input required.
